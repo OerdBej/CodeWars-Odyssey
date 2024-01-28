@@ -18,3 +18,11 @@ function countBy(x, n) {
 
 // Examples:
 console.log(countBy(1, 10));
+
+//2️⃣ Using the map function 2️⃣
+
+function countBy1(x, n) {
+  return Array.from({ length: n }, (_, index) => x * (index + 1));
+}
+
+console.log(countBy1(11, 10));
