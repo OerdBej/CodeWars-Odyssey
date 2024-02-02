@@ -10,7 +10,7 @@ const inputArray = [1, 2, 3, 4, 5, 6];
 const result = maps(inputArray);
 console.log(result);
 
-//2️⃣ solution using a map function 
+//2️⃣ solution using a map function
 
 const maps = (x) => x.map((item) => item * 2);
 const inputArray2 = [1, 2, 3, 4, 5, 6];
