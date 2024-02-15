@@ -10,5 +10,13 @@ function highAndLow(numbers) {
 }
 
 console.log(highAndLow("1 2 3 4 5"));
-console.log(highAndLow("1 2 -3 4 5"));
 console.log(highAndLow("1 9 3 4 -5"));
+
+//2️⃣ different solution
+
+function highAndLow2(numbers) {
+  numbers = numbers.split(" ");
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
+
+console.log(highAndLow2("1 39 43 34 -5"));
