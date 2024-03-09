@@ -1,0 +1,20 @@
+function cakes(recipe, available) {
+  let minRatio = Infinity;
+
+  for (const ingredient in recipe) {
+    if (available.hasOwnProperty(ingredient)) {
+      const ratio = available[ingredient] / recipe[ingredient];
+      minRatio = Math.min(minRatio, ratio);
+    } else {
+      return 0;
+    }
+  }
+
+  return Math.floor(minRatio);
+}
+
+// Example usage:
+const recipe = { flour: 200, sugar: 100, eggs: 2 };
+const availableIngredients = { flour: 1200, sugar: 600, eggs: 10 };
+const result = cakes(recipe, availableIngredients);
+console.log(result);

@@ -16,8 +16,7 @@ function countBy(x, n) {
   return result;
 }
 
-// Examples:
-console.log(countBy(1, 10));
+ console.log(countBy(1, 10));
 
 //2️⃣ Using the map function 2️
 
