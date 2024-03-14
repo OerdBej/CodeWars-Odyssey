@@ -25,3 +25,16 @@ const recipe = { flour: 200, sugar: 100, eggs: 2 };
 const availableIngredients = { flour: 1200, sugar: 600, eggs: 10 };
 const result = cakes(recipe, availableIngredients);
 console.log(result);
+
+//2️⃣ Refactoring using using more modern javascript features like objects.keys
+
+function cakes(recipe, available) {
+  return Object.keys(recipe).reduce((minCakes, ingredient) => {
+    if (!available[ingredient]) return 0;
+    const possibleCakes = Math.floor(available[ingredient] / recipe[ingredient]);
+    return Math.min(minCakes, possibleCakes);
+  }, Infinity);
+}
+
+// Example usage:
+const recipe1 = { flour: 200, sugar: 100, eggs: 2 };
