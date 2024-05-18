@@ -15,7 +15,6 @@ let findAverage = function (nums) {
   if (nums.length === 0) {
     return 0;
   }
-
   let sum = 0;
 
   for (let i = 0; i < nums.length; i++) {
