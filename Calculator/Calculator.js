@@ -5,6 +5,7 @@
 // calculator(2, 2, '*') // 4
 // calculator(10, 5, '/') // 2
 
+//1️⃣ Using Switch Conditional
 function calculator(num1, num2, operator) {
   let result;
 
@@ -29,3 +30,22 @@ function calculator(num1, num2, operator) {
 }
 
 console.log(calculator(10, 2, "d-"));
+
+//2️⃣ Using if/else conditonals
+
+function calculatorTwo(num1, num2, opeartor) {
+  let result;
+  if (opeartor === "+") {
+    result = num1 + num2;
+  } else if (opeartor === "-") {
+    result = num1 - num2;
+  } else if (operator === "*") {
+    result = num1 * num2;
+  } else if (operator === "/") {
+    result = num1 / num2;
+  } else {
+    throw new Error("Invalid Operator");
+  }
+}
+
+console.log(calculatorTwo(10, 2, "+"));
