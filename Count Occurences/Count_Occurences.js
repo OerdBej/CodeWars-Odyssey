@@ -17,3 +17,8 @@ function countOccurrences(str, char) {
 }
 
 console.log(countOccurrences("Lorem ipsum dolor sit amet sed diam voluptua.", "l"));
+
+//2️⃣ Using the arrow function with split method
+
+const countOccurrences2 = (str, char) => str.split(char).length - 1;
+console.log(countOccurrences2("Hello World wonderfull world", "l"));
